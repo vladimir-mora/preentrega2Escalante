@@ -1,0 +1,263 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+    font-family: heavitas;
+    src: url(../fuentes/Heavitas.ttf);
+}
+
+:root {
+    --naranja: #f24535;
+    --blanco: #f2f2f2;
+    --negro: #0d0d0d;
+}
+
+body {
+    background-color: var(--negro);
+    color: white;
+}
+
+i {
+    color: var(--blanco);
+    font-size: 1.2em;
+}
+
+header {
+    background-color: var(--naranja);
+}
+
+header p {
+    font-weight: bold;
+}
+
+nav .logo{
+    font-family: heavitas;
+    color: var(--naranja);
+    font-size: 1.6em;
+}
+
+nav .links {
+    font-size: 1.5em;
+    color: var(--blanco);
+    font-weight: 500;
+}
+
+nav .borde {
+    border: none;
+}
+
+.links:hover{
+    color: var(--naranja);
+}
+
+nav hr {
+    border: none;
+    height: 1px;
+    background-color: var(--naranja);
+}
+
+hr {
+  border-color: var(--naranja);
+  border-width: 2px;
+  border-style: solid;
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+
+
+ /* MAIN */ 
+
+ #main {
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ) ,url(../img/hero1.jpg);
+    background-size: cover;
+    background-position: center center;
+ }
+
+ .grilla {
+    height: 79vh;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    text-align: center;
+ }
+
+ .grilla .contenedor {
+    grid-column: 3 / 10;
+    grid-row: 2 / 5;
+ }
+
+ .grilla .contenedor h2 {
+    color: var(--naranja);
+    font-family: heavitas;
+    font-size: 2.2em;
+ }
+
+ .grilla .contenedor p{
+    font-size: 1.1em;
+ }
+
+ .grilla .contenedor a {
+    text-decoration: none;
+    color: var(--naranja);
+    font-weight: bold;
+    font-size: 1.1em;
+ }
+
+ .grilla .contenedor button {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid var(--naranja);
+    padding: 8px 12px;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+ }
+
+ .grilla .contenedor button:hover {
+    background-color: var(--negro);
+    transform: scale(1.1);
+    animation: pulse 1s infinite;
+ }
+
+ @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* footer */
+
+  footer .contenedor {
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  footer p {
+    margin-top: 15px;
+    font-size: .9em;
+    margin-left: 12px;
+  }
+
+  footer .iconos {
+    width: auto;
+  }
+
+  footer .fa-brands {
+    padding-right: 15px;
+    cursor: pointer;
+  }
+
+  footer .fa-brands:hover {
+    color: var(--naranja);
+  }
+
+  /* page productos */
+
+
+  /* main */
+
+  main .container h2 {
+    color: var(--naranja);
+  }
+
+  main .imagenes {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  main .cartas{
+    background-color: var(--negro);
+    color: var(--blanco);
+    height: 100%;
+  }
+
+  main .cartas h3 {
+    color: var(--naranja);
+    font-family: heavitas;
+    margin-top: 10px;
+  }
+
+  main .cartas a {
+    background-color: var(--negro);
+    color: var(--naranja);
+    border: 2px solid var(--naranja);
+  }
+
+  main .cartas a:hover {
+    background-color: var(--naranja);
+    color: var(--negro);
+    border-color: var(--negro);
+  }
+
+  /* page contactos */
+
+  /* main */
+
+  main .hero {
+    height: 83vh;
+    background-image:linear-gradient(
+      0deg,
+      rgba(0,0,0,0.7),
+      rgba(0,0,0,0.7)
+  ) ,url(/img/somos.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  main .conten_hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+  }
+
+
+  main .conten_hero h2 {
+    font-family: heavitas;
+    font-size: 3em;
+  }
+
+  main .contact {
+    background-color: var(--naranja);
+    color: var(--negro);
+  }
+
+  main .contact p {
+    color: var(--blanco);
+    font-size: 1.2em;
+  }
+
+  main .contact .conten {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+
+  main .contact .conten h4 {
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  main .contact .conten i {
+    margin-right: 12px;
+    padding-top: 15px;
+    font-size: 3em;
+  }
+
+
+
